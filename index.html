@@ -10,46 +10,56 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <header class="header center-items">
-        <h2 class="header__h2"><a  href="#">Digian</a></h2>
-        <nav class="header__nav ">
-            <ul class="header__ul center-items--space-between center-items">
-                <li>
-                    <a class="header__a" href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a class="header__a" href="#about">
-                        About 
-                    </a>
-                </li>
-                <li>
-                    <a class="header__a" href="#service">
-                        service
-                    </a>
-                </li>
-                <li>
-                    <a class="header__a" href="#contact">
-                        contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <section class="header__section center-items max-width">
+            <h2 class="header__h2"><a  href="#">Digian</a></h2>
+            <nav class="header__nav ">
+                <ul class="header__ul center-items--space-between center-items">
+                    <li>
+                        <a class="header__a" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__a" href="#about">
+                            About 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__a" href="#service">
+                            service
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header__a" href="#contact">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-        <a class="header__a" href="#">get a quote</a>
+            <a class="header__a" href="#">get a quote</a>
+        </section>
     </header>
 
-    <section class="hero">
-        <img src="images/slider-img.png" alt="slider-img" width="300" height="300">
-
-        <section>
-            <h1>Digital Marketing Experts</h1>
-            <p>
-                Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.
-            </p>
-            <a href="#contact">Contact</a>
-        </section>
+    <section class="hero section  center-items center-items--column">
+        <div class="hero__div max-width margin-auto ">
+            <figure class="hero__figure">
+                <img src="images/slider-img.png" alt="slider-img" width="300" height="300">
+            </figure>
+            <section  class="hero__details">
+                <h1 class="hero__h1">Digital Marketing Experts</h1>
+                <p class="hero__p">
+                    Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl, convallis et augue sit amet, lobortis semper quam.
+                </p>
+                <a class="hero__a" href="#contact">Contact</a>
+            </section>
+        </div>
+        <div>
+            <button class="hero__button-nav"></button>
+            <button class="hero__button-nav"></button>
+            <button class="hero__button-nav"></button>
+        </div>
     </section>
 
     <main>
