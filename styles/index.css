@@ -62,7 +62,6 @@ h2, h3, figcaption{
 p{
     line-height: 20px;
     margin-bottom: 10px;
-    color: rgb(57, 57, 57);
 }
 
 img{
@@ -465,8 +464,7 @@ body{
     margin-top: 60px;
     color: var(--white);
     padding: var(--padding);
-    border-radius: var(--border-radius);
-    font-size: 1.2rem;    
+    border-radius: var(--border-radius); 
 }
 .testimonial__figure-wrapper{
     position: relative;
@@ -498,7 +496,51 @@ body{
 }
 .testimonial p{
     color: inherit;
-    line-height: .8cm;
+}
+
+/* ////////////////   CONTACT */
+/* model */
+.contact__h2{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.contact__wrapper{
+    /* background-color: papayawhip; */
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.contact__form{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.form__input{
+    padding: var(--padding);
+    font: inherit;
+    border: 1px solid var(--color);
+    border-radius: var(--border-radius);
+}
+.form__textarea{
+    resize: none;
+    height: 150px;
+}
+.form__button{
+    background-color: var(--primary-color);
+    align-self: flex-start;
+}
+.form__input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.contact__item{
+    flex: 1;
+}
+.contact__wrapper div:last-child{
+    background-color: rgba(0, 0, 0, 0.208);
+    flex-basis: 350px;
+    min-height: 300px;
 }
 
 
@@ -573,6 +615,12 @@ body{
     }
     .case-study__card{
         width: 100%;
+    }
+    .testimonial__figure-wrapper{
+        height: 100px;
+    }
+    .testimonial__details{
+        padding: 0;
     }
     
 }
