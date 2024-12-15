@@ -1,0 +1,38 @@
+/* || RESETS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+:root{
+    --font-size: clamp(1rem, 2vh, 1.2rem);
+    --font-size-large: clamp(1.3rem, 4vh, 1.7rem);
+
+    /* COLOR */
+    --primary-color: rgb(110, 3, 210);
+    --bg-color: rgb(110, 3, 210);
+    --tertiary-color: orange;
+
+    /* ANIMATION */
+    --animation-duration-long: 1s;
+    --animation-duration-short: .25s;
+    --animation-duration: .5s;
+}
+
+/* || GENERAL STYLES */
+html{
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier;
+    font-size: var(--font-size);
+
+}
+
+/* BLock */
+.header{
+    background-color: rgb(110, 3, 210);
+}
+
+
+
