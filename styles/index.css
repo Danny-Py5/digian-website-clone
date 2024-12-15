@@ -8,31 +8,94 @@
 /* || VARIABLES */
 :root{
     --font-size: clamp(1rem, 2vh, 1.2rem);
-    --font-size-large: clamp(1.3rem, 4vh, 1.7rem);
+    --font-size-large: clamp(1.2rem, 3vh, 1.5rem);
 
     /* COLOR */
     --primary-color: rgb(110, 3, 210);
     --bg-color: rgb(110, 3, 210);
     --tertiary-color: orange;
 
+    /* PADDING */
+    --header-padding: .8rem;
+    --padding: 1rem;
+    --padding-small: .5rem;
+    --padding-tb: .7rem;
+
+
     /* ANIMATION */
     --animation-duration-long: 1s;
     --animation-duration-short: .25s;
     --animation-duration: .5s;
+
+    /* BORDER */
+    --border-radius: 8px;
+    --border-radus-L: 1rem;
 }
 
 /* || GENERAL STYLES */
 html{
     scroll-behavior: smooth;
-    font-family: 'Courier New', Courier;
+    font-family: Helvetica;
     font-size: var(--font-size);
-
+}
+/* || UTILITY */
+.center-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* || UTILITY ENDS*/
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\ Header \\\\\\\\\\\\ */
 /* BLock */
 .header{
     background-color: rgb(110, 3, 210);
+    color: white;
+    justify-content: space-between;
+    padding: var(--header-padding);
+    font-size: var(--font-size);
+}
+/* MODEL */
+.header__h2 a{
+    color: white;
+    text-decoration: none;
+}
+.header__nav{
+    flex: 1;
+    max-width: 400px;
+}
+.header__ul{
+    /* background-color: red; */
+    list-style-type: none;
+}
+.header__a:any-link{
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: var(--animation-duration-short);
+    padding: var(--padding-tb);
+}
+.header__a:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+.header > a {
+    background-color: var(--tertiary-color);
+    border-radius: var(--border-radius);
 }
 
+/* MODIFIER */
+.center-items--column{
+    flex-direction: column;
+}
+.center-items--space-between{
+    justify-content: space-between;
+}
 
+/* MODIFIER ENDS */
 
