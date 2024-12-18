@@ -275,6 +275,26 @@ body{
     height: 70px;
     width: 100px;
 }
+.hero__button-cont{
+    margin-top: 50px;
+    display: flex;
+    column-gap: .5rem;
+}
+.hero__button-nav{
+    background-color: var(--white);
+    width: min(100vw, 30px);
+    height: min(100vw, 30px);
+    padding: 0;
+    border-radius: 50px;
+}
+.hero__button-nav:hover{
+    transform: none;
+}
+.hero__button-nav:active,  
+.hero__button-nav:focus{
+    scale: 1.3;
+    background-color: var(--tertiary-color);
+}
 /* model */
 
 
