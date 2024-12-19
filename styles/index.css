@@ -88,7 +88,6 @@ button:hover{
     transform: translateY(-5px);
 }
 body{
-    padding-bottom: 1000px;
     height: 100%;
 }
 /* || UTILITY */
@@ -122,8 +121,17 @@ body{
 .center-items--space-between{
     justify-content: space-between;
 }
+.center-items--column-left{
+    align-items: flex-start;
+}
+.line-height--increased-24{
+    line-height: 24px;
+}
 .section--padding-top{
     padding-top: 5rem;
+}
+.center-items--justify-start{
+    justify-content: flex-start;
 }
 .img-width--unset{
     width: unset;
@@ -413,6 +421,9 @@ body{
     justify-content: center;
     row-gap: 34px;
 }
+.about__h2{
+    text-align: left;
+}
 .about__h2, .about__p{
     margin-bottom: 30px;
 }
@@ -516,7 +527,7 @@ body{
     flex-direction: column;
     row-gap: 2rem;
 }
-.form__input{
+.form-input{
     padding: var(--padding);
     font: inherit;
     border: 1px solid var(--color);
@@ -530,7 +541,7 @@ body{
     background-color: var(--primary-color);
     align-self: flex-start;
 }
-.form__input:focus{
+.form-input:focus{
     outline: 1px solid var(--primary-color);
 }
 
@@ -542,6 +553,68 @@ body{
     flex-basis: 350px;
     min-height: 300px;
 }
+
+/* ||||||||||| FOOTER */
+.footer{
+    padding: var(--padding);
+    color: var(--white);
+    background-color: var(--bg-color);
+    border-top-left-radius: 150px;
+    margin-top: 100px;
+}
+
+.footer__h3{
+    text-align: left;
+}
+.footer__ul a:any-link{
+    color: inherit;
+}
+.footer__wrapper{
+    padding: var(--padding);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+.footer__wrapper + p{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer__form{
+    margin-top: 100px;
+    row-gap: 16px;
+    display: flex;
+}
+.footer__form-email-input{
+    background-color: #00000000;
+    color: inherit;
+    border: none;
+    border-bottom: 2px solid var(--white);
+    border-radius: 0;
+    padding: .5rem;
+}
+.footer__form-email-input::placeholder{
+    color: inherit;
+}
+.footer__form button[type='submit']{
+    background-color: var(--tertiary-color);
+}
+.footer__links-location{
+    gap: 64px;
+}
+.footer__ul{
+    list-style-type: none;
+    line-height: 40px;
+}
+.footer__link-location__section{
+    width: 100%;
+}
+.footer__ul a{
+    display: block;
+}
+.footer__ul a:hover{
+    color: var(--tertiary-color);
+}
+
 
 
 
@@ -617,10 +690,13 @@ body{
         width: 100%;
     }
     .testimonial__figure-wrapper{
-        height: 100px;
+        height: 127px;
     }
     .testimonial__details{
         padding: 0;
+    }
+    .footer__wrapper{
+        grid-template-columns: 1fr;
     }
     
 }
