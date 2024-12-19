@@ -27,5 +27,22 @@ window.addEventListener('resize', (e) => {
         reomveHeaderActiveCLasses();
     }
 });
-
 headerHanduler();
+
+
+let currentContent = document.querySelector('.js-hero__div');
+
+function slideHeroContent() {
+    currentContent.classList.add('slideOut');
+    currentContent.classList.remove('slideInRight');
+
+    setTimeout(()=> {
+        currentContent.classList.remove('slideOut');
+        currentContent.classList.add('slideInRight');
+    }, 1000);
+};
+
+
+document.querySelectorAll('.hero__slider-button').forEach(button => {
+    button.addEventListener('click', slideHeroContent);
+})

@@ -112,6 +112,14 @@ body{
     max-width: var(--section-max-width);
     margin: auto;
 }
+.slideOut{
+    animation: slideOut 1s ease-out;
+
+}
+.slideInRight{
+    animation: slideInRight 1s ease-out;
+    animation-direction: alternate;
+}
 /* || UTILITY ENDS*/
 
 /* MODIFIER */
@@ -240,6 +248,7 @@ body{
     color: var(--white);
     height: min(100vh, auto);
     border-bottom-right-radius: 350px;
+    overflow-x: hidden;
 }
 /* || MODEL */
 .hero__div{
@@ -700,13 +709,31 @@ body{
     }
     
 }
-
+/* animation */
 @keyframes dropSmoothly {
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+}
+@keyframes slideInRight {
+    from{
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0);
+        animation-fill-mode: forwards;
     }
 }
 
